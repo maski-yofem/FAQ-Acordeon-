@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    body {
+        background-image: url(../images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+    }
+
+    .cabecalho{
+        margin: 2rem 6rem;
+    }
+
+    .cabecalho h1 {
+        font-size: 3.2rem;
+    }
+
+    .conteudo {
+        padding-left: 5rem;
+    }
+
+}

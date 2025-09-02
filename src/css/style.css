@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    padding: 1rem;
+    background-color: var(--body-low);
+    background-image: url(../images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; 
+    height: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    min-height: 30rem;
+    background-color: var(--main-section);
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 5rem;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    margin: 2rem 4rem;
+    gap: 2rem;
+}
+
+.cabecalho h1{
+    font-size: 5rem;
+    color: var(--text-section);
+}
+
+.cabecalho .icone{
+    height: 2.8rem;
+}
+
+.conteudo{
+    width: 95%;
+    padding-left: 2rem;
+}
+
+.conteudo .itens{
+    margin: 1rem;
+
+}
+
+.conteudo .itens .item{
+    cursor: pointer;
+    background-image: url(../images/icon-plus.svg);
+    background-repeat: no-repeat;
+    background-position: top .5px right 0 ;
+    background-size: 20px;
+    border-bottom: 1px solid #ccc;
+    margin: 18px 10px;
+    padding-bottom: 1rem;
+}
+
+.conteudo .itens .item:last-child{
+    border-bottom: none;
+}
+
+.conteudo .itens .item .pergunta{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-section);
+    margin-bottom: 15px;
+}
+
+.conteudo .itens .item .pergunta:hover{
+    color: var(--activate-status);
+    font-weight: 950;
+    cursor: url(../images/hand-pointer-solid.svg), auto;
+}
+
+.conteudo .itens .item .resposta{
+    display: none;
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--text-section);
+    padding-bottom: 10px;
+}
+
+.rodape{
+    margin-top: auto;
+}
+
+/*CLASSES PARA ACORDEON ATIVADO*/
+
+.conteudo .itens .item.ativo .resposta{
+    display: block;
+}
+
+.conteudo .itens .item.ativo{
+    background-image: url(../images/icon-minus.svg);
+}

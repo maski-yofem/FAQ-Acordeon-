@@ -1,0 +1,6 @@
+:root{
+    --main-section: hsl(0, 100%, 100%);
+    --body-low: hsl(275, 100%, 97%);
+    --activate-status: hsl(281, 83%, 54%);;
+    --text-section: hsl(292, 42%, 14%);
+}
