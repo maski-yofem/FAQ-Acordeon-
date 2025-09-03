@@ -25,6 +25,8 @@
     }
     .conteudo .itens .item .pergunta{
         font-size: 7.5px;
+        /*o padding-right garante espaçamento entre o item e o ícone*/
+        padding-right: 30px;
     }
 
     .conteudo .itens .item .resposta{
