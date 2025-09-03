@@ -3,19 +3,31 @@
         background-image: url(../images/background-pattern-mobile.svg);
         background-repeat: no-repeat;
         background-size: contain;
-        
+    }
+
+    .container{
+        margin-top: 25rem;
     }
 
     .cabecalho{
-        margin: 2rem 6rem;
+        margin: 2rem 4rem;
     }
 
     .cabecalho h1 {
         font-size: 3.2rem;
     }
+}
 
-    .conteudo {
-        padding-left: 5rem;
+@media (max-width: 425px){
+
+    .container{
+        margin-top: 10rem;
+    }
+    .conteudo .itens .item .pergunta{
+        font-size: 7.5px;
     }
 
+    .conteudo .itens .item .resposta{
+        font-size: 5.5px;
+    }
 }

@@ -24,7 +24,7 @@ main{
 .container{
     display: flex;
     flex-direction: column;
-    width: 60rem;
+    max-width: 60rem;
     min-height: 30rem;
     background-color: var(--main-section);
     border-radius: 10px;
@@ -55,7 +55,6 @@ main{
 
 .conteudo .itens{
     margin: 1rem;
-
 }
 
 .conteudo .itens .item{
